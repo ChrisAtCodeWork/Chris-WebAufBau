@@ -7,6 +7,7 @@ $baseurl: '{{ site.baseurl }}/images';
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'animations';
 @import 'font-awesome.min.css';
 @import url('https://use.typekit.net/akp0ymc.css');
 
@@ -1567,6 +1568,7 @@ body.is-menu-visible {
       margin: 0 0 0 -0.75em;
       position: absolute;
       width: 1.5em;
+      animation: bouncy 1.2s ease-in-out .8s infinite alternate;
     }
   }
 
