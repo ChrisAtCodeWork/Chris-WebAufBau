@@ -7,7 +7,7 @@ description: |
   Another fine responsive  
   site template freebie  
   crafted by [HTML5 UP](http://html5up.net)
-owner: Chris Schiechl # or company name
+owner: Chris Schiechl
 first_published: 2020
 lsi: false
 safe: true
@@ -21,8 +21,8 @@ kramdown:
   syntax_highlighter: rouge
 
 email: your-email@domain.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+baseurl: "/ChrisAtCodeWork/"
+url: "https://chrisatcodework.github.io"
 social:
   twitter: https://twitter.com/<username>
   github: https://github.com/<username>
