@@ -21,7 +21,7 @@ kramdown:
   syntax_highlighter: rouge
 
 email: your-email@domain.com
-baseurl: "/ChrisAtCodeWork/"
+baseurl: "/ChrisAtCodeWork"
 url: "https://chrisatcodework.github.io"
 social:
   twitter: https://twitter.com/<username>
