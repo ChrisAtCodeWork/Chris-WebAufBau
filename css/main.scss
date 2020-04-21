@@ -1480,9 +1480,9 @@ body.is-menu-visible {
 /* Banner */
 
 #banner {
-  @include vendor('display', 'flex');
-  @include vendor('flex-direction', 'column');
-  @include vendor('justify-content', 'center');
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   cursor: default;
   height: 100vh;
   min-height: 35em;
@@ -1491,19 +1491,20 @@ body.is-menu-visible {
   text-align: center;
 
   h2 {
-    @include vendor('transform', 'scale(1)');
-    @include vendor('transition', ('transform 0.5s ease', 'opacity 0.5s ease'));
+    transform: scale(1);
+    transition: transform 0.5s ease, opacity 0.5s ease;
     display: inline-block;
     font-family: _font(family-logo);
     font-size: 2rem;
     opacity: 1;
     padding: 0 1em;
+    margin-bottom: 100px;
     position: relative;
     z-index: 1;
 
     &:before, &:after {
-      @include vendor('transition', 'width 0.85s ease');
-      @include vendor('transition-delay', '0.25s');
+      transition: width .85s ease;
+      transition-delay: .25s;
       background: _palette(fg-bold);
       content: '';
       display: block;
@@ -1533,9 +1534,9 @@ body.is-menu-visible {
   }
 
   .more {
-    @include vendor('transition', ('transform 0.75s ease', 'opacity 0.75s ease'));
-    @include vendor('transition-delay', '3.5s');
-    @include vendor('transform', 'translateY(0)');
+    transition: transform 0.75s ease, opacity 0.75s ease;
+    transition-delay: .8s;
+    transform: translateY(0);
     border: none;
     bottom: 0;
     color: inherit;
