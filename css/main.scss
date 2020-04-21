@@ -1480,9 +1480,9 @@ body.is-menu-visible {
 /* Banner */
 
 #banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+  @include vendor('display', 'flex');
+  @include vendor('flex-direction', 'column');
+  @include vendor('justify-content', 'end');
   cursor: default;
   height: 100vh;
   min-height: 35em;
@@ -1803,7 +1803,7 @@ body.is-mobile {
 
 body.landing {
   #page-wrapper {
-    @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")'));
+    @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner1.jpg")'));
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1824,7 +1824,7 @@ body.is-mobile {
 
     #banner,
     .wrapper.style4 {
-      @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner.jpg")'));
+      @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner1.jpg")'));
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
