@@ -156,3 +156,7 @@ pre {
     overflow-x: auto;
   }
 }
+
+@-ms-viewport {
+  width: device-width;
+}
