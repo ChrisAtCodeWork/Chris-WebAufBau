@@ -1,11 +1,8 @@
 body.landing {
   #page-wrapper {
-    @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner1.jpg")'));
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
     padding-top: 0;
+    @include vendor('transition', 'background-color #{_duration(fadein)} ease-in-out');
   }
 
   #footer {
@@ -17,14 +14,6 @@ body.is-mobile {
   &.landing {
     #page-wrapper {
       background: none;
-    }
-
-    #banner,
-    .wrapper.style4 {
-      @include vendor('background-image', ('linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5))', 'url("#{$baseurl}/banner1.jpg")'));
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
     }
 
     #footer {
